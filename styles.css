@@ -1,0 +1,146 @@
+/* CSS Document */
+@charset "utf-8";
+
+:root {
+    --pseudoblanco: rgb(247, 243, 237);
+    --flynnpaff: rgb(255, 213, 223);
+    --banana: rgb(255, 188, 43);
+    --mandarina: rgb(246, 130, 77);
+    --pitufo: rgb(41, 72, 136);
+}
+
+/* GENERAL */
+
+* {
+    font-family: "novel-sans-pro", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--pseudoblanco);
+    padding-bottom: 70px;
+}
+
+header p {
+    font-size: 2rem;
+    color: var(--banana);
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+nav a {
+    padding: 25px;
+    color: var(--pitufo);
+    line-height: 2.4rem;
+}
+
+nav a:hover {
+    color: var(--banana);
+}
+
+nav a:active {
+    color: var(--mandarina);
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#gif {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+/* MAIN */
+
+#imgs {
+    padding: 75px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#imgs img {
+    max-width: 1400px;
+    max-height: auto;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: var(--flynnpaff);
+    padding: 30px 0px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer li {
+    padding: 0px 20px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+footer h2 {
+    font-family: "novel-sans-pro", sans-serif;
+    font-size: 2rem;
+    color: var(--pitufo);
+    padding: 10px 0px;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 30px 10px 20px 10px;
+}
+
+.iconos {
+    height: 40px;
+    width: 40px;
+    fill: var(--pseudoblanco);
+}
+
+.iconos:hover {
+    fill: var(--banana)
+}
