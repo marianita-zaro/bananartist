@@ -12,7 +12,7 @@
 /* GENERAL */
 
 * {
-    font-family: "novel-sans-pro", sans-serif;
+    font-family: "work-sans", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
     list-style: none;
@@ -20,6 +20,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    color: var(--mandarina);
+    font-family: "formiga", sans-serif;
+    font-weight: 550;
+    text-align: center;
+    line-height: 2.7rem;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--pseudoblanco);
+    font-size: 1.9rem;
+    font-family: "formiga", sans-serif;
+    font-weight: 450;
+    line-height: 3rem;
+}
+
+h3 {
+    color: var(--pitufo);
+    font-size: 1.5rem;
+    font-weight: 650;
+    line-height: 2.2rem;
+    max-width: 400px;
+    padding: 10px 0px;
+}
+
+h4 {
+    color: var(--pitufo);
+    font-size: 1.5rem;
+    font-weight: 450;
+    padding: 10px 0px;
+}
+
+p {
+    text-wrap-style: balance;
+    line-height: 1.8rem;
+    padding: 5px 0px 5px 0px;
+    color: var(--pitufo);
+    text-align: left;
+}
+
+ul {
+    line-height: 1.8rem;
+    color: var(--pitufo);
+}
+
+.azul {
+    color: var(--pitufo);
 }
 
 /* HEADER */
@@ -30,14 +80,14 @@ header {
 }
 
 header p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--banana);
-    font-weight: 500;
+    font-weight: 300;
     line-height: 2rem;
 }
 
 nav {
-    font-weight: 500;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,15 +99,19 @@ nav {
 nav a {
     padding: 25px;
     color: var(--pitufo);
-    line-height: 2.4rem;
+    opacity: .75;
+    transition: .2s;
 }
 
 nav a:hover {
     color: var(--banana);
+    font-weight: 500;
+    opacity: 1;
 }
 
-nav a:active {
-    color: var(--mandarina);
+nav a.active {
+    font-weight: 500;
+    opacity: 1;
 }
 
 #hero {
@@ -70,8 +124,10 @@ nav a:active {
 #gif {
     width: 100%;
     height: auto;
-    max-width: 800px;
-    min-width: 400px;
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 15px;
+    padding-top: 20px;
 }
 
 /* MAIN */
@@ -85,6 +141,55 @@ nav a:active {
 #imgs img {
     max-width: 1400px;
     max-height: auto;
+}
+
+/* GALERIA */
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+
+#galeria a {
+    padding: 15px;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    height: 600px;
+    width: auto;
+}
+
+.fancybox-button path {
+    fill: var(--banana);
+}
+
+/* ABOUT */
+
+#bio {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+#work {
+    background-color: var(--banana);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#txt {
+    max-width: 750px;
 }
 
 /* FOOTER */
@@ -119,8 +224,7 @@ footer p {
 }
 
 footer h2 {
-    font-family: "novel-sans-pro", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--pitufo);
     padding: 10px 0px;
 }
@@ -136,8 +240,8 @@ footer h2 {
 }
 
 .iconos {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     fill: var(--pseudoblanco);
 }
 
