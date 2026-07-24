@@ -307,7 +307,7 @@ body.compensate-for-scrollbar {
 /* Buttons */
 
 .fancybox-button {
-    background: var(--pitufo);
+    background: var(--pseudoblanco);
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -326,7 +326,7 @@ body.compensate-for-scrollbar {
 .fancybox-button,
 .fancybox-button:visited,
 .fancybox-button:link {
-    color: var(--banana);
+    color: var(--pitufo);
 }
 
 .fancybox-button:hover {

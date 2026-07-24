@@ -174,12 +174,17 @@ main::after {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    padding: 75px 50px;
+    padding-top: 75px;
 }
 
 #galeria a {
-    padding: 50px;
+    padding: 25px;
 }
+
+.galeria-bottom {
+    padding-bottom: 100px;
+}
+
 /*
 #video {
     display: flex;
@@ -193,7 +198,31 @@ video {
 
 .fancybox-button path {
     fill: var(--banana);
-}/*
+}*/
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    height: 550px;
+    width: auto;
+    align-items: center;
+}
 
 /* ABOUT */
 
@@ -282,9 +311,12 @@ footer h2 {
 .iconos {
     height: 35px;
     width: 35px;
-    fill: var(--pseudoblanco);
+    fill: white;
+    opacity: 1;
+    transition: .2s;
 }
 
 .iconos:hover {
-    fill: var(--banana)
+    fill: var(--banana);
+    opacity: 1;
 }
