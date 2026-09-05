@@ -10,6 +10,7 @@
         @import url("https://use.typekit.net/vtc0dzm.css");
     </style>
     <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -37,11 +38,11 @@
                     <img src="img/1_thumbnail.jpg" width="400" height="400"
                         alt="Little boy selling strange gears to a robot" />
                 </a>
-                                <a href="img/2.jpg" data-fancybox="gallery">
+                <a href="img/2.jpg" data-fancybox="gallery">
                     <img src="img/2_thumbnail.jpg" width="400" height="400"
                         alt="Little boy selling strange gears to a robot" />
                 </a>
-                                <a href="img/3.jpg" data-fancybox="gallery">
+                <a href="img/3.jpg" data-fancybox="gallery">
                     <img src="img/3_thumbnail.jpg" width="400" height="400"
                         alt="Little boy selling strange gears to a robot" />
                 </a>
@@ -66,40 +67,53 @@
                 <img src="img/pibis_lineup_thumbnail.jpg" width="1200" height="575"
                     alt="Little girl admiring fancy cakes" />
             </a>
-            <a href="img/juanita1.jpg" data-fancybox="gallery">
-                <img src="img/juanita1_thumbnail.jpg" width="1000" height="707"
+            <a href="img/juanita_tapa.jpg" data-fancybox="gallery">
+                <img src="img/juanita_tapa_thumbnail.jpg" width="1000" height="707"
                     alt="Little girl admiring fancy cakes" />
             </a>
-            <div class="horizontal">
-                <div class="vertical">
-                    <a href="img/juanita2.jpg" data-fancybox="gallery">
-                        <img src="img/juanita2_thumbnail.jpg" width="400" height="566"
-                            alt="Little girl admiring fancy cakes" />
-                    </a>
-                    <a href="img/juanita3.jpg" data-fancybox="gallery">
-                        <img src="img/juanita3_thumbnail.jpg" width="400" height="566"
-                            alt="Little girl admiring fancy cakes" />
-                    </a>
+            <div class="swiper-contenedor">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/juanita_1.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_1.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_2.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_2.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_3.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_3.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_4.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_4.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_5.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_5.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_6.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_6.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/juanita_7.jpg" data-fancybox="swiper-galeria" class="fancybox-swiper">
+                                <img src="img/juanita_7.jpg" width="480" height="600" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="vertical">
-                    <a href="img/juanita4.jpg" data-fancybox="gallery">
-                        <img src="img/juanita4_thumbnail.jpg" width="450" height="318"
-                            alt="Little girl admiring fancy cakes" />
-                    </a>
-                    <a href="img/juanita5.jpg" data-fancybox="gallery">
-                        <img src="img/juanita5_thumbnail.jpg" width="450" height="318"
-                            alt="Little girl admiring fancy cakes" />
-                    </a>
-                    <a href="img/juanita6.jpg" data-fancybox="gallery">
-                        <img src="img/juanita6_thumbnail.jpg" width="450" height="318"
-                            alt="Little girl admiring fancy cakes" />
-                    </a>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <a href="img/juanita7.jpg" data-fancybox="gallery">
-                <img src="img/juanita7_thumbnail.jpg" width="1000" height="209"
-                    alt="Little girl admiring fancy cakes" />
-            </a>
         </section>
     </main>
 
@@ -151,6 +165,17 @@
             buttons: [
                 'close'
             ]
+        });
+    </script>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: false,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 </body>

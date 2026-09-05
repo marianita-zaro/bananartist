@@ -224,6 +224,40 @@ video {
     align-items: center;
 }
 
+.swiper-contenedor {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.swiper-galeria {
+    padding: 0;
+}
+
+.swiper-contenedor .swiper-button-next,
+.swiper-contenedor .swiper-button-prev {
+    color: var(--banana);
+}
+
+.swiper-button-prev {
+    left: -50px;
+}
+
+.swiper-button-next {
+    right: -50px;
+}
+
 /* ABOUT */
 
 #bio {
