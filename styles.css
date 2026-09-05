@@ -354,3 +354,81 @@ footer h2 {
     fill: var(--banana);
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #gif {
+        max-width: 350px;
+        height: auto;
+    }
+
+    img {
+        height: auto;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #bio {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    #work {
+        padding-bottom: 30px;
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    #work h2 {
+        font-size: 1.5rem;
+    }
+
+    #work::after {
+        bottom: 85px;
+        left: 0;
+        width: 100%;
+        height: 30px;
+    }
+
+    #galeria {
+        padding: 25px 15px;
+    }
+
+    #galeria a {
+        padding: 5px;
+    }
+
+    #video {
+        height: 100%;
+        width: auto;
+    }
+
+.horizontal {
+flex-direction: column;
+}
+
+    #hadita1{
+        display: none;
+    }
+
+    footer h2 {
+        font-size: 1.2rem;
+    }
+}
